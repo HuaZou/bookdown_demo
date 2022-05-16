@@ -1,0 +1,19 @@
+--- 
+title: "bookdown demo"
+author: "Hua Zou"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [assets/book.bib, assets/packages.bib]
+biblio-style: apalike
+link-citations: yes
+always_allow_html: true
+description: "A demo for bookdown"
+---
+
+# Prerequisites
+
+* R 4.1.2 or later release [Download link](https://mirrors.tuna.tsinghua.edu.cn/CRAN/).
+
+* Rstudio Desktop [Download link](https://www.rstudio.com/products/rstudio/download/#download).

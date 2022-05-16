@@ -1,0 +1,6 @@
+Package: bookdown_demo
+Type: Book
+Title: bookdown demo
+Version: 0.0.1
+Imports: bookdown
+Remotes: HuaZou/bookdown_demo
