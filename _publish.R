@@ -22,7 +22,7 @@ for (fmt in c('html_book', 'tufte_html_book')) {
   file.rename('_output.yml2', '_output.yml')
   if (res != 0) stop('Failed to compile the book to ', fmt)
   i = i + 1
-  bookdown::publish_book(paste0('XMAS_tutorial', i))
+  bookdown::publish_book(paste0('book_demo', i))
 }
 unlink('_book', recursive = TRUE)
 
