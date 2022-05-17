@@ -14,6 +14,6 @@ description: "A demo for bookdown"
 
 # Prerequisites
 
-* R 4.1.2 or later release [Download link](https://mirrors.tuna.tsinghua.edu.cn/CRAN/).
+* R 4.1.2 [@R-base] or later release [Download link](https://mirrors.tuna.tsinghua.edu.cn/CRAN/).
 
 * Rstudio Desktop [Download link](https://www.rstudio.com/products/rstudio/download/#download).
