@@ -2,9 +2,10 @@ bookdown::gitbook:
   css: assets/style.css
   config:
     toc:
-      collapse: subsection
+      #collapse: subsection
+      collapse: section 
       scroll_highlight: true
-      toc_depth: 3
+      toc_depth: 1
       before: |
         <li><a href="./">bookdown demo</a></li>
       after: |
