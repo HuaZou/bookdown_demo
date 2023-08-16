@@ -5,7 +5,7 @@ bookdown::gitbook:
       #collapse: subsection
       collapse: section 
       scroll_highlight: true
-      toc_depth: 1
+      toc_depth: 3
       before: |
         <li><a href="./">bookdown demo</a></li>
       after: |
