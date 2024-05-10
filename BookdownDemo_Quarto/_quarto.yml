@@ -1,0 +1,105 @@
+project:
+  type: book
+  output-dir: _book
+
+lang: zh
+
+book:
+  title: "Bookdown demo by Quarto"
+  date: today
+  date-format: long
+  output-file: "_tutorial"
+  author: "邹华"
+  repo-actions:
+    - source
+  repo-url: "https://github.com/"
+  downloads: [pdf, epub, docx]
+  # google-analytics: "G-ZPWJBMKFL8"
+  # comments:
+  #   giscus:
+  #     repo: HuaZou/data-analysis-in-action
+  chapters:
+    - index.qmd
+    - preface.qmd
+    - intro.qmd
+    - part: "数据准备"
+      chapters:
+        - wrangling-objects.qmd
+    - references.qmd
+  appendices:
+    - git-github.qmd
+  repo-branch: main
+  search: true
+
+bibliography: 
+  - references.bib
+  - packages.bib
+
+
+format:
+  html:
+    theme:
+      light: flatly
+      dark: darkly
+    include-in-header:
+      - header.html
+    toc: true
+    toc-depth: 3
+    cover-image: cover.png
+    code-link: true
+    code-line-numbers: true
+    crossref:
+      chapters: true
+  docx:
+    toc: true
+    toc-depth: 3
+    crossref:
+      chapters: true
+  epub:
+    toc: true
+    toc-depth: 3
+    epub-cover-image: cover.png
+    html-math-method: mathml
+    crossref:
+      chapters: true
+  pdf:
+    documentclass: book
+    include-in-header: preamble.tex
+    include-before-body:
+      text: |
+        \ifdefined\appendixname
+          \renewcommand*\appendixname{附录}
+        \else
+          \newcommand\appendixname{附录}
+        \fi
+    include-after-body:
+      text: |
+        \printindex
+        % \printnoidxglossary[sort=word,title={术语表}]
+    classoption: 
+      - UTF8
+      - twoside
+      - openany
+      - table
+    keep-tex: true
+    latex-auto-install: false
+    mathspec: true
+    lof: true
+    lot: true
+    geometry:
+      - tmargin=2.5cm
+      - bmargin=2.5cm
+      - lmargin=3.0cm
+      - rmargin=2.0cm
+    hyperrefoptions:
+      - pdfstartview=FitH
+      - linktoc=all
+    highlight-style: github
+    number-sections: true
+    top-level-division: chapter
+    colorlinks: true
+    link-citations: true
+    crossref:
+      chapters: true
+
+editor: visual

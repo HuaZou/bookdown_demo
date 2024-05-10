@@ -1,0 +1,22 @@
+Type: Book
+Package: BDQ
+Title: Bookdown demo by Quarto.
+Version: 0.01
+Authors@R: c(
+    person("Hua", "Zou", , "zouhua1@outlook.com", role = c("aut", "cre"))
+  )
+URL: https://bookdown.org/
+BugReports: https://github.com/issues
+Depends: 
+    R (>= 4.3.0)
+Imports:
+    dplyr (>= 1.1.0),
+    e1071
+Suggests:
+    quarto (>= 1.2),
+    rsconnect (>= 1.1.0)
+Enhances:
+    sp (>= 2.0-0)
+SystemRequirements: pgf (>= 3.00)
+Encoding: UTF-8
+License: CC NC ND 4.0
